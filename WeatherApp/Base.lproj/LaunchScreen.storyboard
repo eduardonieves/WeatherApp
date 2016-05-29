@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +14,45 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partlyCloudyDay.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-U4-kpp">
+                                <rect key="frame" x="40" y="203" width="240" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ez6-VA-PZE"/>
+                                    <constraint firstAttribute="height" constant="162" id="xzs-hf-GWn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cl-Gn-n7J">
+                                <rect key="frame" x="86" y="293" width="131" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="snr-wu-ude"/>
+                                    <constraint firstAttribute="width" constant="131" id="tmL-S2-3y8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42473773819999999" green="0.91238594569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4bM-U4-kpp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="40" id="2eo-ox-1AH"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="4bM-U4-kpp" secondAttribute="bottom" constant="203" id="3B5-5y-fay"/>
+                            <constraint firstItem="8cl-Gn-n7J" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="21.5" id="BMH-po-ze0"/>
+                            <constraint firstItem="8cl-Gn-n7J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-8.5" id="Gpe-OY-bUo"/>
+                            <constraint firstItem="4bM-U4-kpp" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="183" id="kAE-JV-wtC"/>
+                            <constraint firstAttribute="trailing" secondItem="4bM-U4-kpp" secondAttribute="trailing" constant="40" id="sYa-1P-Cet"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="partlyCloudyDay.png" width="326" height="260"/>
+    </resources>
 </document>
